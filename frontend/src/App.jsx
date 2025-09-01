@@ -1,22 +1,27 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
   return (
     <>
-
+      <Header/>
     </>
   )
 }
 
-function Header(){
+function Header() {
   return (
     <>
-      <div></div>
+      <header className="container-fluid">
+        <div className="row align-items-center bg-primary">
+          <div className="col text-center">
+            <p className="text-primary">Web Shop</p>
+          </div>
+        </div>
+      </header>
     </>
-  )
+  );
 }
 
 export default App
